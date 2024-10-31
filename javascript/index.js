@@ -181,7 +181,7 @@ class DanceChallenge {
             desc1[desc1["iconic pop anthems in drag culture."] = 7] = "iconic pop anthems in drag culture.";
             desc1[desc1["RuPaul's most memorable performances."] = 8] = "RuPaul's most memorable performances.";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "The queens will participate in a dance number about " + desc1[randomNumber(0, 3)];
+        description.innerHTML = "The queens will participate in a dance number about " + desc1[randomNumber(0, 8)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -207,21 +207,24 @@ class DesignChallenge {
         let description = document.querySelector("p#Description");
         let desc1;
         (function (desc1) {
-            desc1[desc1["trash."] = 0] = "trash.";
-            desc1[desc1["random items."] = 1] = "random items.";
-            desc1[desc1["dollar store items."] = 2] = "dollar store items.";
-            desc1[desc1["a specific color scheme."] = 3] = "a specific color scheme.";
-            desc1[desc1["items inspired by past Drag Race contestants."] = 4] = "items inspired by past Drag Race contestants.";
-            desc1[desc1["bags."] = 5] = "bags.";
-            desc1[desc1["wigs."] = 6] = "wigs.";
-            desc1[desc1["winter items."] = 7] = "winter items.";
-            desc1[desc1["summer items."] = 8] = "summer items.";
+            desc1[desc1["campy couture."] = 0] = "campy couture.";
+            desc1[desc1["costumes inspired by famous LGBTQ+ icons."] = 1] = "costumes inspired by famous LGBTQ+ icons.";
+            desc1[desc1["over-the-top outfits."] = 2] = "over-the-top outfits.";
+            desc1[desc1["upcycled fashion."] = 3] = "upcycled fashion.";
+            desc1[desc1["bold prints and patterns."] = 4] = "bold prints and patterns.";
+            desc1[desc1["beachwear with a twist."] = 5] = "beachwear with a twist.";
+            desc1[desc1["sexy costumes inspired by pop culture."] = 6] = "sexy costumes inspired by pop culture.";
+            desc1[desc1["celebrity impersonation outfits."] = 7] = "celebrity impersonation outfits.";
+            desc1[desc1["edgy streetwear."] = 8] = "edgy streetwear.";
+            desc1[desc1["glamorous circus costumes."] = 9] = "glamorous circus costumes.";
+            desc1[desc1["drag-themed fairy tales."] = 10] = "drag-themed fairy tales.";
+            desc1[desc1["futuristic sci-fi fashion."] = 11] = "futuristic sci-fi fashion.";
         })(desc1 || (desc1 = {}));
         if (currentCast.length == 6 && makeoverCounter == false && team == false && currentCast != firstCast && currentCast != secondCast) {
             description.innerHTML = "It's the makeover challenge! The queens will make everyday people their drag sisters!";
         }
         else
-            description.innerHTML = "The queens will do outfits with " + desc1[randomNumber(0, 8)];
+            description.innerHTML = "The queens will do outfits with " + desc1[randomNumber(0, 11)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -258,8 +261,14 @@ class ImprovChallenge {
             desc1[desc1["late-night TV show."] = 3] = "late-night TV show.";
             desc1[desc1["new Bossy Rossy episode."] = 4] = "new Bossy Rossy episode.";
             desc1[desc1["suggestive kids TV show."] = 5] = "suggestive kids TV show.";
+            desc1[desc1["dramatic soap opera scene."] = 6] = "dramatic soap opera scene.";
+            desc1[desc1["fashion police panel discussion."] = 7] = "fashion police panel discussion.";
+            desc1[desc1["reality show elimination round."] = 8] = "reality show elimination round.";
+            desc1[desc1["infomercial for a ridiculous product."] = 9] = "infomercial for a ridiculous product.";
+            desc1[desc1["mockumentary about drag queens."] = 10] = "mockumentary about drag queens.";
+            desc1[desc1["drag queen talent show."] = 11] = "drag queen talent show.";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "The queens will improvise in a " + desc1[randomNumber(0, 5)];
+        description.innerHTML = "The queens will improvise in a " + desc1[randomNumber(0, 11)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -313,11 +322,16 @@ class Rusical {
             desc[desc["social media."] = 0] = "social media.";
             desc[desc["a pop celebrity."] = 1] = "a pop celebrity.";
             desc[desc["a political figure."] = 2] = "a political figure.";
-            desc[desc["past Drag Race contestans."] = 3] = "past Drag Race contestans.";
+            desc[desc["past Drag Race contestants."] = 3] = "past Drag Race contestants.";
             desc[desc["cancel culture."] = 4] = "cancel culture.";
-            desc[desc["RuPaul's music carreer."] = 5] = "RuPaul's music carreer.";
+            desc[desc["RuPaul's music career."] = 5] = "RuPaul's music career.";
+            desc[desc["the rise of TikTok stars."] = 6] = "the rise of TikTok stars.";
+            desc[desc["iconic reality show moments."] = 7] = "iconic reality show moments.";
+            desc[desc["drag queen fashion trends."] = 8] = "drag queen fashion trends.";
+            desc[desc["the evolution of LGBTQ+ representation in media."] = 9] = "the evolution of LGBTQ+ representation in media.";
+            desc[desc["queer icons of the past and present."] = 10] = "queer icons of the past and present.";
         })(desc || (desc = {}));
-        description.innerHTML = "Today's challenge is... THE RUSICAL!! The queens will do a musical about " + desc[randomNumber(0, 5)];
+        description.innerHTML = "Today's challenge is... THE RUSICAL!! The queens will do a musical about " + desc[randomNumber(0, 10)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -348,26 +362,55 @@ class Ball {
             desc1[desc1["Sweet 16, "] = 4] = "Sweet 16, ";
             desc1[desc1["Black and white, "] = 5] = "Black and white, ";
             desc1[desc1["Winter, "] = 6] = "Winter, ";
+            desc1[desc1["Voguing extravaganza, "] = 7] = "Voguing extravaganza, ";
+            desc1[desc1["Hollywood glamour, "] = 8] = "Hollywood glamour, ";
+            desc1[desc1["Futuristic fashion, "] = 9] = "Futuristic fashion, ";
+            desc1[desc1["Drag royalty, "] = 10] = "Drag royalty, ";
+            desc1[desc1["Renaissance revival, "] = 11] = "Renaissance revival, ";
+            desc1[desc1["Couture meets cosplay, "] = 12] = "Couture meets cosplay, ";
+            desc1[desc1["Under the sea, "] = 13] = "Under the sea, ";
+            desc1[desc1["Mythical creatures, "] = 14] = "Mythical creatures, ";
+            desc1[desc1["Pop art inspiration, "] = 15] = "Pop art inspiration, ";
         })(desc1 || (desc1 = {}));
         let desc2;
         (function (desc2) {
-            desc2[desc2["Antique, "] = 0] = "Antique, ";
-            desc2[desc2["Rainbown, "] = 1] = "Rainbown, ";
-            desc2[desc2["Rich, "] = 2] = "Rich, ";
-            desc2[desc2["Space, "] = 3] = "Space, ";
-            desc2[desc2["Wild, "] = 4] = "Wild, ";
-            desc2[desc2["Water, "] = 5] = "Water, ";
+            desc1[desc1["Tropical getaway, "] = 0] = "Tropical getaway, ";
+            desc1[desc1["Glamour of the '80s, "] = 1] = "Glamour of the '80s, ";
+            desc1[desc1["Fierce fairy tale, "] = 2] = "Fierce fairy tale, ";
+            desc1[desc1["Rock star realness, "] = 3] = "Rock star realness, ";
+            desc1[desc1["Space odyssey, "] = 4] = "Space odyssey, ";
+            desc1[desc1["Tea party chic, "] = 5] = "Tea party chic, ";
+            desc1[desc1["Disco inferno, "] = 6] = "Disco inferno, ";
+            desc1[desc1["Iconic music video, "] = 7] = "Iconic music video, ";
+            desc1[desc1["High fashion runway, "] = 8] = "High fashion runway, ";
+            desc1[desc1["Enchanted forest, "] = 9] = "Enchanted forest, ";
+            desc1[desc1["Pride parade spectacular, "] = 10] = "Pride parade spectacular, ";
+            desc1[desc1["Cinematic villain, "] = 11] = "Cinematic villain, ";
+            desc1[desc1["Sassy superhero, "] = 12] = "Sassy superhero, ";
+            desc1[desc1["Undercover agent, "] = 13] = "Undercover agent, ";
+            desc1[desc1["Runway royalty, "] = 14] = "Runway royalty, ";
+            desc1[desc1["Cultural mashup, "] = 15] = "Cultural mashup, ";
         })(desc2 || (desc2 = {}));
         let desc3;
         (function (desc3) {
-            desc3[desc3["Ice queen."] = 0] = "Ice queen.";
-            desc3[desc3["Futuristic."] = 1] = "Futuristic.";
-            desc3[desc3["Fire."] = 2] = "Fire.";
-            desc3[desc3["Princess."] = 3] = "Princess.";
-            desc3[desc3["Jewels."] = 4] = "Jewels.";
-            desc3[desc3["Flowers"] = 5] = "Flowers";
+            desc1[desc1["Carnival extravaganza, "] = 0] = "Carnival extravaganza, ";
+            desc1[desc1["Mysterious masquerade, "] = 1] = "Mysterious masquerade, ";
+            desc1[desc1["Retro video game, "] = 2] = "Retro video game, ";
+            desc1[desc1["Fairy tale remix, "] = 3] = "Fairy tale remix, ";
+            desc1[desc1["Futuristic fashion, "] = 4] = "Futuristic fashion, ";
+            desc1[desc1["Glam goth, "] = 5] = "Glam goth, ";
+            desc1[desc1["Celestial beings, "] = 6] = "Celestial beings, ";
+            desc1[desc1["Drag brunch, "] = 7] = "Drag brunch, ";
+            desc1[desc1["Fantasy adventure, "] = 8] = "Fantasy adventure, ";
+            desc1[desc1["Pop culture icons, "] = 9] = "Pop culture icons, ";
+            desc1[desc1["Streetwear chic, "] = 10] = "Streetwear chic, ";
+            desc1[desc1["RuPaul's favorites, "] = 11] = "RuPaul's favorites, ";
+            desc1[desc1["Glamorous grunge, "] = 12] = "Glamorous grunge, ";
+            desc1[desc1["Classic Hollywood, "] = 13] = "Classic Hollywood, ";
+            desc1[desc1["Fantasy royalty, "] = 14] = "Fantasy royalty, ";
+            desc1[desc1["Vintage circus, "] = 15] = "Vintage circus, ";
         })(desc3 || (desc3 = {}));
-        description.innerHTML = "Today's challenge is... THE BALL! The queens will bring three looks to the runway! The themes are: " + desc1[randomNumber(0, 6)] + desc2[randomNumber(0, 5)] + desc3[randomNumber(0, 5)];
+        description.innerHTML = "Today's challenge is... THE BALL! The queens will bring three looks to the runway! The themes are: " + desc1[randomNumber(0, 15)] + desc2[randomNumber(0, 15)] + desc3[randomNumber(0, 15)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
