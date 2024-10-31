@@ -138,9 +138,14 @@ class ComedyChallenge {
             desc2[desc2["a popular TV series."] = 4] = "a popular TV series.";
             desc2[desc2["Drag Race."] = 5] = "Drag Race.";
             desc2[desc2["Past Drag Race Contestants."] = 6] = "Past Drag Race Contestants.";
-            desc2[desc2["comedy."] = 7] = "comedy.";
+            desc2[desc2["Old School vs. New School of Drag."] = 7] = "Old School vs. New School of Drag.";
+            desc2[desc2["the struggles of adulting."] = 8] = "the struggles of adulting.";
+            desc2[desc2["the latest social media trends."] = 9] = "the latest social media trends.";
+            desc2[desc2["politics."] = 10] = "politics.";
+            desc2[desc2["dating apps."] = 11] = "dating apps.";
+            desc2[desc2["internet memes."] = 12] = "internet memes.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "The queens will participate in " + desc1[randomNumber(0, 3)] + desc2[randomNumber(0, 7)];
+        description.innerHTML = "The queens will participate in " + desc1[randomNumber(0, 3)] + desc2[randomNumber(0, 12)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -166,10 +171,15 @@ class DanceChallenge {
         let description = document.querySelector("p#Description");
         let desc1;
         (function (desc1) {
-            desc1[desc1["the history of disco."] = 0] = "the history of disco.";
-            desc1[desc1["RuPaul's biography."] = 1] = "RuPaul's biography.";
-            desc1[desc1["rival dance clubs."] = 2] = "rival dance clubs.";
-            desc1[desc1["Drag Race."] = 3] = "Drag Race.";
+        desc1[desc1["the legacy of ballroom culture."] = 0] = "the legacy of ballroom culture.";
+            desc1[desc1["the evolution of drag dance styles."] = 1] = "the evolution of drag dance styles.";
+            desc1[desc1["the impact of LGBTQ+ icons on dance."] = 2] = "the impact of LGBTQ+ icons on dance.";
+            desc1[desc1["famous lip-sync performances."] = 3] = "famous lip-sync performances.";
+            desc1[desc1["the art of voguing."] = 4] = "the art of voguing.";
+            desc1[desc1["the influence of Pride celebrations."] = 5] = "the influence of Pride celebrations.";
+            desc1[desc1["legendary drag queen performances."] = 6] = "legendary drag queen performances.";
+            desc1[desc1["iconic pop anthems in drag culture."] = 7] = "iconic pop anthems in drag culture.";
+            desc1[desc1["RuPaul's most memorable performances."] = 8] = "RuPaul's most memorable performances.";
         })(desc1 || (desc1 = {}));
         description.innerHTML = "The queens will participate in a dance number about " + desc1[randomNumber(0, 3)];
     }
